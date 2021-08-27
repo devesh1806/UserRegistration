@@ -27,7 +27,7 @@ public class UserRegistration {
 			case 3:
 				String dummyEmail = sc.nextLine();
 				String strEmail = sc.nextLine();
-				String regexEmail = "^[A-Z]?[a-z]{3,}[.-_+]?[0-9a-zA-Z]{0,}@[A-Za-z0-9]{1,}.[a-z]{2,}[.]?([a-z]{2})?$";
+				String regexEmail = "^[A-Z]?[a-z]{2,}[.+_-]?[0-9a-zA-Z]{0,}@[A-Za-z0-9]{1,}.[a-z]{2,}[.]?([a-z]{2,})?$";
 				if (strEmail.matches(regexEmail)) System.out.println("EmailID is valid.");
 				else System.out.println("EmailID is not valid.");
 				break;
