@@ -9,43 +9,43 @@ public class UserRegistration {
 		int option = sc.nextInt();
 		switch(option) {
 			case 1:
-				String dummy = sc.nextLine();
-				String str = sc.nextLine();
-				String regex = "^[A-Z][a-z]{3,}";
-				if (str.matches(regex)) System.out.println("Firstname is valid.");
+				String dummyFirst = sc.nextLine();
+				String strFirst = sc.nextLine();
+				String regexFirst = "^[A-Z][a-z]{3,}";
+				if (strFirst.matches(regexFirst)) System.out.println("Firstname is valid.");
 				else System.out.println("Firstname is not valid.");
 				break;
 			
 			case 2:
-				String dummy1 = sc.nextLine();
-				String str1 = sc.nextLine();
-				String regex1 = "^[A-Z][a-z]{3,}";
-				if (str1.matches(regex1)) System.out.println("Lastname is valid.");
+				String dummyLast = sc.nextLine();
+				String strLast = sc.nextLine();
+				String regexLast = "^[A-Z][a-z]{3,}";
+				if (strLast.matches(regexLast)) System.out.println("Lastname is valid.");
 				else System.out.println("Lastname is not valid.");
 				break;
 				
 			case 3:
-				String dummy2 = sc.nextLine();
-				String str2 = sc.nextLine();
-				String regex2 = "^[A-Z]?[a-z]{3,}[.-_+]?[0-9a-zA-Z]{0,}@[A-Za-z0-9]{1,}.[a-z]{2,}[.]?([a-z]{2})?$";
-				if (str2.matches(regex2)) System.out.println("EmailID is valid.");
+				String dummyEmail = sc.nextLine();
+				String strEmail = sc.nextLine();
+				String regexEmail = "^[A-Z]?[a-z]{3,}[.-_+]?[0-9a-zA-Z]{0,}@[A-Za-z0-9]{1,}.[a-z]{2,}[.]?([a-z]{2})?$";
+				if (strEmail.matches(regexEmail)) System.out.println("EmailID is valid.");
 				else System.out.println("EmailID is not valid.");
 				break;
 				
 			case 4:
-				String dummy3 = sc.nextLine();
-				String str3 = sc.nextLine();
-				String regex3 = "^[0-9-]{1,}\\s[0-9]{10}$";
-				if (str3.matches(regex3)) System.out.println("Mobile Number is valid.");
+				String dummyMobile = sc.nextLine();
+				String strMobile = sc.nextLine();
+				String regexMobile = "^[0-9-]{1,}\\s[0-9]{10}$";
+				if (strMobile.matches(regexMobile)) System.out.println("Mobile Number is valid.");
 				else System.out.println("Mobile Number is not valid.");
 				break;
 				
 			case 5:
-				String dummy4 = sc.nextLine();
-				String str4 = sc.nextLine();
-				String rule1 = "^[a-zA-z]{8,}";
-				if (str4.matches(rule1)) System.out.println("Password Rule 1 is valid.");
-				else System.out.println("Password Rule 1 is not valid.");
+				String dummyPassword = sc.nextLine();
+				String strPassword = sc.nextLine();
+				String rule = "[a-zA-z]{8,}";
+				if (strPassword.matches(rule)) System.out.println("Password Rule 1,2 are valid.");
+				else System.out.println("Password Rule 1,2 are not valid.");
 				break;
 				
 			default:
