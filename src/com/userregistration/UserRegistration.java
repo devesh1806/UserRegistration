@@ -43,9 +43,9 @@ public class UserRegistration {
 			case 5:
 				String dummyPassword = sc.nextLine();
 				String strPassword = sc.nextLine();
-				String rule = "[a-zA-z]{8,}";
-				if (strPassword.matches(rule)) System.out.println("Password Rule 1,2 are valid.");
-				else System.out.println("Password Rule 1,2 are not valid.");
+				String rule = "[a-zA-z0-9]{8,}";
+				if (strPassword.matches(rule)) System.out.println("Password Rule 1,2,3 are valid.");
+				else System.out.println("Password Rule 1,2,3 are not valid.");
 				break;
 				
 			default:
