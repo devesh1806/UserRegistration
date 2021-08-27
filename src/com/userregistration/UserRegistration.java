@@ -5,7 +5,7 @@ public class UserRegistration {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Validate 1.Firstname 2.Lastname 3.EmailID 4.Mobile Number");
+		System.out.println("Validate 1.Firstname 2.Lastname 3.EmailID 4.Mobile Number 5.Password");
 		int option = sc.nextInt();
 		switch(option) {
 			case 1:
@@ -38,6 +38,14 @@ public class UserRegistration {
 				String regex3 = "^[0-9-]{1,}\\s[0-9]{10}$";
 				if (str3.matches(regex3)) System.out.println("Mobile Number is valid.");
 				else System.out.println("Mobile Number is not valid.");
+				break;
+				
+			case 5:
+				String dummy4 = sc.nextLine();
+				String str4 = sc.nextLine();
+				String rule1 = "^[a-zA-z]{8,}";
+				if (str4.matches(rule1)) System.out.println("Password Rule 1 is valid.");
+				else System.out.println("Password Rule 1 is not valid.");
 				break;
 				
 			default:
